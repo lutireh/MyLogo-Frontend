@@ -1,0 +1,492 @@
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    height: 72px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 15px 0;
+    background: white;
+    text-transform: uppercase;
+    box-shadow:gray;
+  }
+  
+  #header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+  }
+  
+#header .btn{
+    font-size: 14px;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+  
+  @media (max-width: 992px) {
+    #header {
+      height: 60px;
+      padding: 8px 0;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  .nav-menu, .nav-menu * {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    padding-right: 40px;
+  }
+  
+  .nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+  }
+  
+  .nav-menu a {
+    display: block;
+    position: relative;
+    color: black;
+    padding: 8px 0 12px 0;
+    transition: 0.3s;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .nav-menu > ul > li + li {
+    margin-left: 30px;
+  }
+  
+  .nav-menu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 3px;
+    left: 0;
+    background-color: orange;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+    
+  .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: orangered;
+    text-decoration: none;
+
+  }
+  
+  .nav-menu .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow:gray;
+    transition: ease all 0.3s;
+  }
+  
+  .nav-menu .drop-down:hover > ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-menu .drop-down li {
+    min-width: 180px;
+    position: relative;
+  }
+  
+  .nav-menu .drop-down ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: black;
+  }
+  
+  .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+    color: orangered;
+  }
+  
+  .nav-menu .drop-down > a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 5px;
+  }
+  
+  .nav-menu .drop-down .drop-down ul {
+    top: 0;
+    left: calc(100% - 30px);
+  }
+  
+  .nav-menu .drop-down .drop-down:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+  }
+  
+  .nav-menu .drop-down .drop-down > a {
+    padding-right: 35px;
+  }
+  
+  .nav-menu .drop-down .drop-down > a:after {
+    content: "\eaa0";
+    font-family: IcoFont;
+    position: absolute;
+    right: 15px;
+  }
+  
+  @media (max-width: 1366px) {
+    .nav-menu .drop-down .drop-down ul {
+      left: -90%;
+    }
+    .nav-menu .drop-down .drop-down:hover > ul {
+      left: -100%;
+    }
+    .nav-menu .drop-down .drop-down > a:after {
+      content: "\ea9d";
+    }
+  }
+
+  /* Principal */
+ .features{
+     padding-top: 150px;
+     padding-bottom: 70px;
+ }
+ .features .btn{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:white;
+    background-color: orangered;
+ }
+  .features h2{
+    text-transform: uppercase;
+    font-size: 14px;
+    color:orangered;
+  }
+
+  .features p{
+      color: gray;
+  }
+.features .input-group{
+  box-shadow: 0 2px 29px 0 rgba(37, 37, 37, 0.1);
+  margin: 10px;
+}
+  /*--------------------------------------------------------------
+# Serviços
+--------------------------------------------------------------*/
+.services{
+  background-color: rgb(229, 235, 243);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    text-align: left;
+    border-bottom: 3px solid #fff;
+    box-shadow: 0 2px 29px 0 rgba(37, 37, 37, 0.1);
+  }
+  .services p{
+    color: gray;
+  }
+
+  .services .icon img{
+      height:50px;
+      margin-bottom: 20px;
+  }
+  .services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .services .title a {
+    color: #111;
+  }
+  
+  .services .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  .services .icon-box-blue{
+    margin-top: 30px;
+  }
+  .services h2{
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:orangered;
+  }
+
+  .services p{
+      color: gray;
+  }
+  
+ .services .btn{
+  padding-left: 60px;
+  padding-right: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color:white;
+  background-color: orangered;
+}
+.services .btn:hover{
+  padding-left: 60px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color:white;
+  background-color: orangered;
+}
+.services i{
+  margin-left: 15px;
+}
+
+/* Experiencias */
+.exp h2{
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color:orangered;
+}
+
+.exp h1{
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+
+.exp p{
+    color: gray;
+}
+.exp p img{
+  height: 20px;
+  padding-right: 8px;
+}
+
+/* Atividades */
+.atividade{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.atividade .at{
+  text-align: center;
+}
+.atividade h2{
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color:orangered;
+}
+
+.atividade h1{
+  font-size: 30px;
+}
+
+.atividade p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+    color: gray;
+}
+.atividade .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  text-align: left;
+  border-bottom: 3px solid white;
+  box-shadow: 0 2px 29px 0 rgba(37, 37, 37, 0.1);
+}
+
+.atividade .btn{
+  margin-top: 30px;
+  background-color: white;
+}
+.atividade i{
+  padding-left: 15px;
+}
+.atividade .btn:hover{
+  margin-top: 30px;
+  background-color: white;
+}
+.atividade .btn2{
+  margin-top: 12px;
+}
+.atividade .btn2:hover{
+  margin-top: 12px;
+}
+
+/* Portofolio */
+.port{
+  padding-top: 30px;
+  background-color: rgb(229, 235, 243);
+  padding-bottom: 60px;
+}
+.port h2{
+  text-transform: uppercase;
+  font-size: 14px;
+  color:orangered;
+  text-align: left;
+}
+
+.port h1{
+  font-size: 30px;
+  text-align: left;
+  padding-bottom: 80px;
+}
+
+.port p{
+  padding-top: 20px;
+  color: gray;
+  text-align: left;
+}
+.port .icon-box {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  text-align: left;
+  border-bottom: 3px solid #fff;
+  box-shadow: 0 2px 29px 0 rgba(37, 37, 37, 0.1);
+}
+.port .btn{
+  margin-left: 15px;
+  background-color: white;
+  border-radius: 40px;  
+  width: 40px;
+  height: 40px;
+}
+.port .btn:hover{
+  background-color: orangered;
+  
+}
+/* Contato */
+.contato{
+  padding-top: 60px;
+  background-color:rgb(229, 235, 243);
+  padding-bottom: 60px;
+}
+.contato h2{
+  text-transform: uppercase;
+  font-size: 14px;
+  color:orangered;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.contato h1{
+  font-size: 30px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.contato input{
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.contato .btn{
+  background-color: orangered;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.contato .btn:hover{
+  background-color: gray;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Footer */
+.footer{
+  background-color: rgb(243, 87, 30);
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+.footer h2{
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+  font-size: 14px;
+  padding-bottom: 20px;
+
+}
+.footer p{
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+.footer h1{
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+/* botão pra cima
+Não esta ficando branco e nem arredondado */
+.back-to-top{
+  position: fixed;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  background-color:  white;
+  right: 30px;
+  bottom: 30px;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+  box-shadow: 0 2px 5px 0 gray;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  color: gray;
+}
+.back-to-top i:hover {
+  color: white;
+}
+.back-to-top:hover {
+  background-color: orangered;
+  transition: background 0.2s ease-in-out;
+}
